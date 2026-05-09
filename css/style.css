@@ -11,7 +11,7 @@ body{
     width: 100vw;
     height: 100vh;
 }
-.yes-button{
+.mainbutton{
     background-color: rgb(211, 86, 225);
     width: 15vh;
     height: 6vh;
@@ -22,24 +22,49 @@ body{
     transition: all 0.3s ease-in-out;
     user-select: none;
 }
-.no-button{
-    background-color: rgb(211, 86, 225);
+.mainbutton:hover{
+    cursor: pointer;
+    background-color: rgb(179, 73, 191);
+    transform: scale(1.2);
+}
+.popup{
+    position: absolute;
+    height: 1vh;
+    width: 30vw;
+    background-color: rgb(249, 76, 255);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+.popup.active{
+    display: flex;
+    height: 30vh;
+}
+.popuptext{
+    margin-top: 4vh;
+    font-size: 20px;
+}
+.popupbutton{
+    background-color: rgb(255, 2, 61);
     width: 15vh;
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     user-select: none;
 }
-.yes-button:hover{
+.popupbutton:hover{
     cursor: pointer;
-    background-color: rgb(179, 73, 191);
-    transform: scale(1.2);
+    background-color: rgb(200, 0, 47);
+    transform: scale(1.1);
 }
-.no-button:hover{
-    cursor: pointer;
-    background-color: rgb(179, 73, 191);
-    transform: scale(0.8);
+.popbwrapper{
+    margin-top: 12vh;
+    display: flex;
+    gap: 2vw;
 }

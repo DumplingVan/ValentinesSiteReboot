@@ -6,8 +6,15 @@
 
 <body>
     <div class="wrapper">
-        <div class="yes-button" onclick="yesfunction()">Yes</div>
-        <div class="no-button" onclick="nofunction()">No</div>
+        <div class="popup">
+            <div class="popuptext">Are you sure you want to click no?</div>
+            <div class="popbwrapper">
+                <div class="popupbutton" id="popYes">Yes</div>
+                <div class="popupbutton" id="popNo">No</div>
+            </div>
+        </div>
+        <div class="mainbutton" onclick="yesfunction()" id="yesButton">Yes</div>
+        <div class="mainbutton" onclick="nofunction()" id="noButton">No</div>
     </div>
 
     <script src="scripts/script.js"></script>
