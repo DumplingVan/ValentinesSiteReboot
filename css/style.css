@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 100vw;
+    height: 100vh;
+}
+.yes-button{
+    background-color: rgb(211, 86, 225);
+    width: 15vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+}
+.no-button{
+    background-color: rgb(211, 86, 225);
+    width: 15vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+.yes-button:hover{
+    cursor: pointer;
+    background-color: rgb(179, 73, 191);
+    transform: scale(1.2);
+}
+.no-button:hover{
+    cursor: pointer;
+    background-color: rgb(179, 73, 191);
+    transform: scale(0.8);
+}
