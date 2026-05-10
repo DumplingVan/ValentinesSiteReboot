@@ -1,15 +1,20 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(255, 89, 241);
 }
 .wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vh;
     width: 100vw;
     height: 100vh;
+}
+.question{
+    font-size: 50px;
+    margin-bottom: 50vh;
+    user-select: none;
 }
 .mainbutton{
     background-color: rgb(211, 86, 225);
@@ -26,6 +31,11 @@ body{
     cursor: pointer;
     background-color: rgb(179, 73, 191);
     transform: scale(1.2);
+}
+.mainbuttons{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
 }
 .popup{
     position: absolute;
