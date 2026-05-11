@@ -12,9 +12,14 @@ body{
     height: 100vh;
 }
 .question{
-    font-size: 50px;
+    font-size: 100px;
+    color: rgb(219, 112, 231);
+    -webkit-text-stroke: 0.1px rgb(205, 65, 221);
     margin-bottom: 50vh;
     user-select: none;
+    font-family: "Great Vibes", cursive;
+    font-weight: 800;
+    font-style: normal;
 }
 .mainbutton{
     background-color: rgb(211, 86, 225);
