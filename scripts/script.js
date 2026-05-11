@@ -11,13 +11,13 @@ var hover = false;
 
 var noclicks = 0;
 
-function yesfunction(){
+yesButton.addEventListener("click", () => {
     console.log("Yes button was clicked.");
 
-    yesButton.style.backgroundColor = "red";
-}
+    yesButton.style.backgroundColor = "red";s
+});
 
-function nofunction(){
+noButton.addEventListener("click", () => {
     console.log("No button was clicked.");
 
     noclicks += 1;
@@ -33,15 +33,15 @@ function nofunction(){
     else if (noclicks == 3){
         popup.classList.add("active");
     }
-}
+})
 
-function noclick(){
+popNo.addEventListener("click", () => {
     noclicks -= 1;
 
     popup.classList.remove("active");
-}
+})
 
-function yesclick(){
+popYes.addEventListener("click", () => {
     noclicks += 1;
     popup.classList.remove("active")
 
@@ -56,7 +56,7 @@ function yesclick(){
     noButton.style.left = String(ranwidth) + "px";
 
     hover = true;
-}
+});
 
 noButton.addEventListener("mouseover", () => {
     if (hover == true){
@@ -69,16 +69,12 @@ noButton.addEventListener("mouseover", () => {
         noButton.style.left = String(ranwidth) + "px";
     }
 }, false);
-function checksize(){
+
+window.addEventListener("resize", () => {
     height = window.innerHeight;
     width = window.innerWidth;
 
     console.log(`The new window size is ${height} x ${width}.`);
-}
+});
 
 console.log("Script succesfully loaded!");
-
-window.addEventListener("resize", checksize);
-
-checksize();
-
